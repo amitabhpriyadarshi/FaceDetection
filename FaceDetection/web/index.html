@@ -6,11 +6,30 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Face Detection</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script defer src="face-api.min.js"></script>
+        <script defer src="script.js"></script>
+        <style>
+            body{
+                margin: 0;
+                padding:0;
+                width: 100vw;
+                height:100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            canvas {
+                position: absolute;
+            }
+        </style>
     </head>
     <body>
-        <div>TODO write content</div>
+
+        <div>
+            <video id="video" width="1200" height="800"  muted  autoplay></video>
+        </div>
     </body>
 </html>
